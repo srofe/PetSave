@@ -15,6 +15,7 @@
 		F40447B2283DDC0B008BC67C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40447B1283DDC0B008BC67C /* Preview Assets.xcassets */; };
 		F40447C6283DDC0B008BC67C /* PetSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */; };
 		F40447D9283DE87D008BC67C /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447D8283DE87D008BC67C /* CoreDataTests.swift */; };
+		F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F40447C1283DDC0B008BC67C /* PetSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveUITests.swift; sourceTree = "<group>"; };
 		F40447D8283DE87D008BC67C /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
+		F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetSave.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				685F03E6A14C8B2558A323F8 /* Persistence.swift */,
+				F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */,
 			);
 			path = coreData;
 			sourceTree = "<group>";
@@ -129,11 +132,11 @@
 		F40447A9283DDC0A008BC67C /* PetSave */ = {
 			isa = PBXGroup;
 			children = (
+				685F088E4A19897BF3F1523E /* Core */,
 				F40447AA283DDC0A008BC67C /* PetSaveApp.swift */,
 				F40447AC283DDC0A008BC67C /* ContentView.swift */,
 				F40447AE283DDC0B008BC67C /* Assets.xcassets */,
 				F40447B0283DDC0B008BC67C /* Preview Content */,
-				685F088E4A19897BF3F1523E /* Core */,
 			);
 			path = PetSave;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */,
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
+				F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +655,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */,
+			);
+			currentVersion = F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */;
+			path = PetSave.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F404479F283DDC0A008BC67C /* Project object */;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F05BF413DEBFA26085669 /* APIConstants.swift */; };
 		F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AA283DDC0A008BC67C /* PetSaveApp.swift */; };
 		F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AC283DDC0A008BC67C /* ContentView.swift */; };
 		F40447AF283DDC0B008BC67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40447AE283DDC0B008BC67C /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685F05BF413DEBFA26085669 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447AA283DDC0A008BC67C /* PetSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveApp.swift; sourceTree = "<group>"; };
 		F40447AC283DDC0A008BC67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		685F01014CA4FEAC752F1912 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				685F0D210EA5D0EB6767753E /* api */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		685F088E4A19897BF3F1523E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				685F01014CA4FEAC752F1912 /* data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		685F0D210EA5D0EB6767753E /* api */ = {
+			isa = PBXGroup;
+			children = (
+				685F05BF413DEBFA26085669 /* APIConstants.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		F404479E283DDC0A008BC67C = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +122,7 @@
 				F40447AC283DDC0A008BC67C /* ContentView.swift */,
 				F40447AE283DDC0B008BC67C /* Assets.xcassets */,
 				F40447B0283DDC0B008BC67C /* Preview Content */,
+				685F088E4A19897BF3F1523E /* Core */,
 			);
 			path = PetSave;
 			sourceTree = "<group>";
@@ -288,6 +315,7 @@
 			files = (
 				F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */,
 				F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */,
+				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F03E6A14C8B2558A323F8 /* Persistence.swift */; };
 		685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F05BF413DEBFA26085669 /* APIConstants.swift */; };
+		685F0F52D7F9430029538527 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0CBA197E3C831C5F640B /* User.swift */; };
 		F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AA283DDC0A008BC67C /* PetSaveApp.swift */; };
 		F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AC283DDC0A008BC67C /* ContentView.swift */; };
 		F40447AF283DDC0B008BC67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40447AE283DDC0B008BC67C /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		685F03E6A14C8B2558A323F8 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		685F05BF413DEBFA26085669 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		685F0CBA197E3C831C5F640B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447AA283DDC0A008BC67C /* PetSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveApp.swift; sourceTree = "<group>"; };
 		F40447AC283DDC0A008BC67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,10 +95,35 @@
 			path = coreData;
 			sourceTree = "<group>";
 		};
+		685F060C3BC10F51EC3AEA48 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				685F0CBA197E3C831C5F640B /* User.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		685F078B0235099F47A50B43 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				685F060C3BC10F51EC3AEA48 /* user */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		685F0846023B30E38A019D31 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				685F078B0235099F47A50B43 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 		685F088E4A19897BF3F1523E /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				685F01014CA4FEAC752F1912 /* data */,
+				685F0846023B30E38A019D31 /* domain */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -332,6 +359,7 @@
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
 				F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */,
+				685F0F52D7F9430029538527 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

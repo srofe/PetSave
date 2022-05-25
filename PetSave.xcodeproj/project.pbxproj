@@ -11,8 +11,8 @@
 		F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AC283DDC0A008BC67C /* ContentView.swift */; };
 		F40447AF283DDC0B008BC67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40447AE283DDC0B008BC67C /* Assets.xcassets */; };
 		F40447B2283DDC0B008BC67C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40447B1283DDC0B008BC67C /* Preview Assets.xcassets */; };
-		F40447BC283DDC0B008BC67C /* PetSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447BB283DDC0B008BC67C /* PetSaveTests.swift */; };
 		F40447C6283DDC0B008BC67C /* PetSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */; };
+		F40447D9283DE87D008BC67C /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447D8283DE87D008BC67C /* CoreDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,9 @@
 		F40447AE283DDC0B008BC67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40447B1283DDC0B008BC67C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F40447B7283DDC0B008BC67C /* PetSaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F40447BB283DDC0B008BC67C /* PetSaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveTests.swift; sourceTree = "<group>"; };
 		F40447C1283DDC0B008BC67C /* PetSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveUITests.swift; sourceTree = "<group>"; };
+		F40447D8283DE87D008BC67C /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 		F40447BA283DDC0B008BC67C /* PetSaveTests */ = {
 			isa = PBXGroup;
 			children = (
-				F40447BB283DDC0B008BC67C /* PetSaveTests.swift */,
+				F40447D4283DE7D1008BC67C /* Tests */,
 			);
 			path = PetSaveTests;
 			sourceTree = "<group>";
@@ -122,6 +122,38 @@
 				F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */,
 			);
 			path = PetSaveUITests;
+			sourceTree = "<group>";
+		};
+		F40447D4283DE7D1008BC67C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F40447D5283DE7DE008BC67C /* Core */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F40447D5283DE7DE008BC67C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F40447D6283DE7E8008BC67C /* data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F40447D6283DE7E8008BC67C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F40447D7283DE7EF008BC67C /* coreData */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		F40447D7283DE7EF008BC67C /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				F40447D8283DE87D008BC67C /* CoreDataTests.swift */,
+			);
+			path = coreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40447BC283DDC0B008BC67C /* PetSaveTests.swift in Sources */,
+				F40447D9283DE87D008BC67C /* CoreDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

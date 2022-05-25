@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F03E6A14C8B2558A323F8 /* Persistence.swift */; };
 		685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F05BF413DEBFA26085669 /* APIConstants.swift */; };
 		F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AA283DDC0A008BC67C /* PetSaveApp.swift */; };
 		F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AC283DDC0A008BC67C /* ContentView.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685F03E6A14C8B2558A323F8 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		685F05BF413DEBFA26085669 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447AA283DDC0A008BC67C /* PetSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveApp.swift; sourceTree = "<group>"; };
@@ -75,8 +77,17 @@
 			isa = PBXGroup;
 			children = (
 				685F0D210EA5D0EB6767753E /* api */,
+				685F03D2C0BF16BFCE44CAEB /* coreData */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		685F03D2C0BF16BFCE44CAEB /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				685F03E6A14C8B2558A323F8 /* Persistence.swift */,
+			);
+			path = coreData;
 			sourceTree = "<group>";
 		};
 		685F088E4A19897BF3F1523E /* Core */ = {
@@ -316,6 +327,7 @@
 				F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */,
 				F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */,
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
+				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

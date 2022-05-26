@@ -38,6 +38,7 @@
 		F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */; };
 		F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */; };
 		F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E12840122E008BC67C /* AnimalDetailRow.swift */; };
+		F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E3284012AB008BC67C /* AnimalDetailsView.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactsView.swift; sourceTree = "<group>"; };
 		F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailCard.swift; sourceTree = "<group>"; };
 		F40447E12840122E008BC67C /* AnimalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailRow.swift; sourceTree = "<group>"; };
+		F40447E3284012AB008BC67C /* AnimalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsView.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -334,6 +336,7 @@
 				F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */,
 				F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */,
 				F40447E12840122E008BC67C /* AnimalDetailRow.swift */,
+				F40447E3284012AB008BC67C /* AnimalDetailsView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				685F0F52D7F9430029538527 /* User.swift in Sources */,
 				685F0EA536FBED95B5933129 /* Organization.swift in Sources */,
 				F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */,
+				F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */,
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,

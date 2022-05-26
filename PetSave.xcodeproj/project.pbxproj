@@ -36,6 +36,7 @@
 		F40447D9283DE87D008BC67C /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447D8283DE87D008BC67C /* CoreDataTests.swift */; };
 		F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */; };
 		F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */; };
+		F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		F40447D8283DE87D008BC67C /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 		F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetSave.xcdatamodel; sourceTree = "<group>"; };
 		F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactsView.swift; sourceTree = "<group>"; };
+		F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailCard.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -328,6 +330,7 @@
 			children = (
 				F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */,
 				F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */,
+				F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 			files = (
 				F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */,
 				F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */,
+				F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */,
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
 				F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */,

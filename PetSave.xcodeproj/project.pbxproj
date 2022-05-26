@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F02E218A2758118EF3695 /* AdoptionStatus.swift */; };
+		685F06D28DFB769FD4DF0CF3 /* AnimalEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0FA841D436CD5385CF00 /* AnimalEnvironment.swift */; };
 		685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F03E6A14C8B2558A323F8 /* Persistence.swift */; };
 		685F0A6353D62F977CD0C5EE /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0787DBDA8180C383BD4D /* Age.swift */; };
 		685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F05BF413DEBFA26085669 /* APIConstants.swift */; };
@@ -48,6 +49,7 @@
 		685F0787DBDA8180C383BD4D /* Age.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
 		685F0CBA197E3C831C5F640B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		685F0E08CF5A5C521860D081 /* AnimalAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalAttributes.swift; sourceTree = "<group>"; };
+		685F0FA841D436CD5385CF00 /* AnimalEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalEnvironment.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447AA283DDC0A008BC67C /* PetSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveApp.swift; sourceTree = "<group>"; };
 		F40447AC283DDC0A008BC67C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				685F02E218A2758118EF3695 /* AdoptionStatus.swift */,
 				685F0787DBDA8180C383BD4D /* Age.swift */,
 				685F0E08CF5A5C521860D081 /* AnimalAttributes.swift */,
+				685F0FA841D436CD5385CF00 /* AnimalEnvironment.swift */,
 			);
 			path = animal;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,
+				685F06D28DFB769FD4DF0CF3 /* AnimalEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

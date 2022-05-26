@@ -35,6 +35,7 @@
 		F40447C6283DDC0B008BC67C /* PetSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */; };
 		F40447D9283DE87D008BC67C /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447D8283DE87D008BC67C /* CoreDataTests.swift */; };
 		F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */; };
+		F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		F40447C5283DDC0B008BC67C /* PetSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveUITests.swift; sourceTree = "<group>"; };
 		F40447D8283DE87D008BC67C /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 		F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetSave.xcdatamodel; sourceTree = "<group>"; };
+		F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactsView.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */,
+				F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */,
 				685F0F52D7F9430029538527 /* User.swift in Sources */,
 				685F0EA536FBED95B5933129 /* Organization.swift in Sources */,
+				F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */,
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,

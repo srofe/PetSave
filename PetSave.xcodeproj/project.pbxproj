@@ -37,6 +37,7 @@
 		F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */; };
 		F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */; };
 		F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */; };
+		F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E12840122E008BC67C /* AnimalDetailRow.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		F40447DB283E14E7008BC67C /* PetSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetSave.xcdatamodel; sourceTree = "<group>"; };
 		F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactsView.swift; sourceTree = "<group>"; };
 		F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailCard.swift; sourceTree = "<group>"; };
+		F40447E12840122E008BC67C /* AnimalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailRow.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -331,6 +333,7 @@
 				F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */,
 				F40447DD283F7F2B008BC67C /* AnimalContactsView.swift */,
 				F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */,
+				F40447E12840122E008BC67C /* AnimalDetailRow.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				685F0FB99AA5278A56B72AEB /* VideoLink.swift in Sources */,
 				685F008592E1C0B05109462C /* Details.swift in Sources */,
 				685F01CE38FEC890EB35003D /* AddressFetcher.swift in Sources */,
+				F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */,
 				685F0EE6C35111CB352B9A83 /* LocationManager.swift in Sources */,
 				F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */,
 				685F0EC1ED0ADDD49E851BAB /* Item.swift in Sources */,

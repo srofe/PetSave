@@ -40,6 +40,7 @@
 		F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E12840122E008BC67C /* AnimalDetailRow.swift */; };
 		F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E3284012AB008BC67C /* AnimalDetailsView.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
+		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		F40447E12840122E008BC67C /* AnimalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailRow.swift; sourceTree = "<group>"; };
 		F40447E3284012AB008BC67C /* AnimalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsView.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
+		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 				F40447DF283F7FB6008BC67C /* AnimalDetailCard.swift */,
 				F40447E12840122E008BC67C /* AnimalDetailRow.swift */,
 				F40447E3284012AB008BC67C /* AnimalDetailsView.swift */,
+				F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */,
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
+				F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,
 				685F06D28DFB769FD4DF0CF3 /* AnimalEnvironment.swift in Sources */,
 				685F096ACCCF93ECDED3F94F /* APIColors.swift in Sources */,

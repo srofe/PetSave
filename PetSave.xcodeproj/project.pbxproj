@@ -43,6 +43,7 @@
 		F41AB62F2840AE4B002959E0 /* AnimalsNearYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB62E2840AE4B002959E0 /* AnimalsNearYouView.swift */; };
 		F41AB6332840B32E002959E0 /* AnimalSearchAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB6322840B32E002959E0 /* AnimalSearchAge.swift */; };
 		F41AB6352840BAB5002959E0 /* AnimalSearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB6342840BAB5002959E0 /* AnimalSearchType.swift */; };
+		F41AB6382840BC65002959E0 /* AnimalTypeSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB6372840BC65002959E0 /* AnimalTypeSuggestionView.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		F41AB62E2840AE4B002959E0 /* AnimalsNearYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNearYouView.swift; sourceTree = "<group>"; };
 		F41AB6322840B32E002959E0 /* AnimalSearchAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchAge.swift; sourceTree = "<group>"; };
 		F41AB6342840BAB5002959E0 /* AnimalSearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchType.swift; sourceTree = "<group>"; };
+		F41AB6372840BC65002959E0 /* AnimalTypeSuggestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTypeSuggestionView.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -374,6 +376,7 @@
 		F41AB6302840AF0A002959E0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F41AB6362840BC49002959E0 /* views */,
 				F41AB6312840AF1E002959E0 /* models */,
 			);
 			path = Search;
@@ -386,6 +389,14 @@
 				F41AB6342840BAB5002959E0 /* AnimalSearchType.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		F41AB6362840BC49002959E0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F41AB6372840BC65002959E0 /* AnimalTypeSuggestionView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -549,6 +560,7 @@
 				685F01CE38FEC890EB35003D /* AddressFetcher.swift in Sources */,
 				F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */,
 				F41AB6352840BAB5002959E0 /* AnimalSearchType.swift in Sources */,
+				F41AB6382840BC65002959E0 /* AnimalTypeSuggestionView.swift in Sources */,
 				685F0EE6C35111CB352B9A83 /* LocationManager.swift in Sources */,
 				F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */,
 				685F0EC1ED0ADDD49E851BAB /* Item.swift in Sources */,

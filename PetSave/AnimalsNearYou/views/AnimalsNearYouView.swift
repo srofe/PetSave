@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AnimalsNearYouView: View {
+    @State var animals: [Animal] = []
+    @State var isLoading = true
+
     var body: some View {
         NavigationView {
             Text("TODO: Animals Near You View")
@@ -15,10 +18,15 @@ struct AnimalsNearYouView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
+
+    @MainActor
+    func stopLoading() async {
+        isLoading = false
+    }
 }
 
 struct AnimalsNearYouView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalsNearYouView()
+        AnimalsNearYouView(animals: Animal.mock, isLoading: false)
     }
 }

@@ -59,6 +59,8 @@
 		F4B863FC28446BB80086628E /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FB28446BB80086628E /* RequestProtocol.swift */; };
 		F4B863FE28446DB00086628E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FD28446DB00086628E /* RequestType.swift */; };
 		F4B86400284476650086628E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FF284476650086628E /* APIManager.swift */; };
+		F4B8640228447C440086628E /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8640128447C440086628E /* RequestManager.swift */; };
+		F4B8640528448FF00086628E /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8640428448FF00086628E /* AuthTokenRequest.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
 /* End PBXBuildFile section */
@@ -136,6 +138,8 @@
 		F4B863FB28446BB80086628E /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		F4B863FD28446DB00086628E /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		F4B863FF284476650086628E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F4B8640128447C440086628E /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		F4B8640428448FF00086628E /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +271,7 @@
 			children = (
 				685F0D84A83FF722DE2116CC /* NetworkError.swift */,
 				F4B863FF284476650086628E /* APIManager.swift */,
+				F4B8640128447C440086628E /* RequestManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -478,10 +483,19 @@
 		F4B863FA28446B9D0086628E /* request */ = {
 			isa = PBXGroup;
 			children = (
+				F4B8640328448FE60086628E /* auth */,
 				F4B863FB28446BB80086628E /* RequestProtocol.swift */,
 				F4B863FD28446DB00086628E /* RequestType.swift */,
 			);
 			path = request;
+			sourceTree = "<group>";
+		};
+		F4B8640328448FE60086628E /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				F4B8640428448FF00086628E /* AuthTokenRequest.swift */,
+			);
+			path = auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,6 +634,7 @@
 				F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */,
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
+				F4B8640228447C440086628E /* RequestManager.swift in Sources */,
 				F41AB6332840B32E002959E0 /* AnimalSearchAge.swift in Sources */,
 				F40447DC283E14E7008BC67C /* PetSave.xcdatamodeld in Sources */,
 				F41AB63E2840CF9D002959E0 /* SuggestionsGrid.swift in Sources */,
@@ -660,6 +675,7 @@
 				685F05C38308779AB9FDC459 /* AnimalRow.swift in Sources */,
 				685F04618B4C7A2EC4F5DF3F /* APIToken.swift in Sources */,
 				685F044BFE62B9DD3C3B9114 /* NetworkError.swift in Sources */,
+				F4B8640528448FF00086628E /* AuthTokenRequest.swift in Sources */,
 				685F044B375075622AB6A16F /* DataParser.swift in Sources */,
 				685F05EE757EE72817E5A77C /* AccessTokenManager.swift in Sources */,
 				685F0911D3080383BB7C20DC /* Media.swift in Sources */,

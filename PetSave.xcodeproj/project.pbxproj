@@ -58,6 +58,7 @@
 		F41AB64228421E92002959E0 /* AnimalsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB64128421E92002959E0 /* AnimalsMock.swift */; };
 		F4B863FC28446BB80086628E /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FB28446BB80086628E /* RequestProtocol.swift */; };
 		F4B863FE28446DB00086628E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FD28446DB00086628E /* RequestType.swift */; };
+		F4B86400284476650086628E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FF284476650086628E /* APIManager.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,7 @@
 		F41AB64128421E92002959E0 /* AnimalsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsMock.swift; sourceTree = "<group>"; };
 		F4B863FB28446BB80086628E /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		F4B863FD28446DB00086628E /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		F4B863FF284476650086628E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				685F0D84A83FF722DE2116CC /* NetworkError.swift */,
+				F4B863FF284476650086628E /* APIManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */,
 				F4B863FC28446BB80086628E /* RequestProtocol.swift in Sources */,
 				685F0EC1ED0ADDD49E851BAB /* Item.swift in Sources */,
+				F4B86400284476650086628E /* APIManager.swift in Sources */,
 				685F05C38308779AB9FDC459 /* AnimalRow.swift in Sources */,
 				685F04618B4C7A2EC4F5DF3F /* APIToken.swift in Sources */,
 				685F044BFE62B9DD3C3B9114 /* NetworkError.swift in Sources */,

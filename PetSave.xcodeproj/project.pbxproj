@@ -47,6 +47,7 @@
 		F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E12840122E008BC67C /* AnimalDetailRow.swift */; };
 		F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447E3284012AB008BC67C /* AnimalDetailsView.swift */; };
 		F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */; };
+		F41361592844A44500E9FF50 /* AnimalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41361582844A44500E9FF50 /* AnimalsRequest.swift */; };
 		F41AB62F2840AE4B002959E0 /* AnimalsNearYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB62E2840AE4B002959E0 /* AnimalsNearYouView.swift */; };
 		F41AB6332840B32E002959E0 /* AnimalSearchAge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB6322840B32E002959E0 /* AnimalSearchAge.swift */; };
 		F41AB6352840BAB5002959E0 /* AnimalSearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB6342840BAB5002959E0 /* AnimalSearchType.swift */; };
@@ -126,6 +127,7 @@
 		F40447E12840122E008BC67C /* AnimalDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailRow.swift; sourceTree = "<group>"; };
 		F40447E3284012AB008BC67C /* AnimalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailsView.swift; sourceTree = "<group>"; };
 		F40A3DD0283F326A00ED1D89 /* AnimalContactLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalContactLink.swift; sourceTree = "<group>"; };
+		F41361582844A44500E9FF50 /* AnimalsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsRequest.swift; sourceTree = "<group>"; };
 		F41AB62E2840AE4B002959E0 /* AnimalsNearYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNearYouView.swift; sourceTree = "<group>"; };
 		F41AB6322840B32E002959E0 /* AnimalSearchAge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchAge.swift; sourceTree = "<group>"; };
 		F41AB6342840BAB5002959E0 /* AnimalSearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchType.swift; sourceTree = "<group>"; };
@@ -434,6 +436,14 @@
 			path = views;
 			sourceTree = "<group>";
 		};
+		F41361572844A41B00E9FF50 /* animals */ = {
+			isa = PBXGroup;
+			children = (
+				F41361582844A44500E9FF50 /* AnimalsRequest.swift */,
+			);
+			path = animals;
+			sourceTree = "<group>";
+		};
 		F41AB62C2840AE26002959E0 /* AnimalsNearYou */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +493,7 @@
 		F4B863FA28446B9D0086628E /* request */ = {
 			isa = PBXGroup;
 			children = (
+				F41361572844A41B00E9FF50 /* animals */,
 				F4B8640328448FE60086628E /* auth */,
 				F4B863FB28446BB80086628E /* RequestProtocol.swift */,
 				F4B863FD28446DB00086628E /* RequestType.swift */,
@@ -646,6 +657,7 @@
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				F41AB64228421E92002959E0 /* AnimalsMock.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
+				F41361592844A44500E9FF50 /* AnimalsRequest.swift in Sources */,
 				F41AB6402841FAFC002959E0 /* Animal.swift in Sources */,
 				F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,

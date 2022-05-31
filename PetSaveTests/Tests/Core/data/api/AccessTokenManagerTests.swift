@@ -28,4 +28,12 @@ class AccessTokenManagerTests: XCTestCase {
         }
         XCTAssertFalse(token.isEmpty)
     }
+
+    func testCachedToken() {
+        guard let sameToken = accessTokenManager?.fetchToken() else {
+            XCTFail("Didn't get token from the access token manager")
+            return
+        }
+        XCTAssertEqual(token.bearerAccessToken, sameToken)
+    }
 }

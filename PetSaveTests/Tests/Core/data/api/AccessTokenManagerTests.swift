@@ -36,4 +36,15 @@ class AccessTokenManagerTests: XCTestCase {
         }
         XCTAssertEqual(token.bearerAccessToken, sameToken)
     }
+
+    func testRefreshToken() throws {
+        let randomToken = AccessTokenTestHelper.randomAPIToken()
+        guard let accessTokenManager = accessTokenManager else {
+            XCTFail("Access token manager object is nil")
+            return
+        }
+        try accessTokenManager.refreshWith(apiToken: randomToken)
+        XCTAssertNotEqual(token.bearerAccessToken, accessTokenManager.fetchToken())
+        XCTAssertEqual(randomToken.bearerAccessToken, accessTokenManager.fetchToken())
+    }
 }

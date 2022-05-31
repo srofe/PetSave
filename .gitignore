@@ -1,5 +1,6 @@
 #### 0 Local customisations
 .idea/
+*.swift.plist
 
 #### - From GitHub gitignore repositories
 

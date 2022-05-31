@@ -17,13 +17,13 @@ class AccessTokenManager {
 
     init(userDefaults: UserDefaults = .standard) {
         self.userDefaults = userDefaults
+        update()
     }
 }
 
 extension AccessTokenManager: AccessTokenManagerProtocol {
     func isTokenValid() -> Bool {
-        accessToken = getToken()
-        expiresAt = getExpirationDate()
+        update()
         return accessToken != nil && expiresAt.compare(Date()) == .orderedDescending
     }
 
@@ -56,5 +56,10 @@ private extension AccessTokenManager {
 
     func getToken() -> String? {
         userDefaults.string(forKey: AppUserDefaultsKeys.bearerAccessToken)
+    }
+
+    func update() {
+        accessToken = getToken()
+        expiresAt = getExpirationDate()
     }
 }

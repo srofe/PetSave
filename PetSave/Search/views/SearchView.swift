@@ -13,6 +13,7 @@ struct SearchView: View {
             Text("TODO: Search View")
                 .navigationTitle("Find your future pet")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

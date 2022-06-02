@@ -68,6 +68,17 @@
 		F4B86400284476650086628E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FF284476650086628E /* APIManager.swift */; };
 		F4B8640228447C440086628E /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8640128447C440086628E /* RequestManager.swift */; };
 		F4B8640528448FF00086628E /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8640428448FF00086628E /* AuthTokenRequest.swift */; };
+		F4B8646A284866F70086628E /* AddressEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B86469284866F70086628E /* AddressEntity.swift */; };
+		F4B8646C2848673D0086628E /* AnimalAttributesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8646B2848673D0086628E /* AnimalAttributesEntity.swift */; };
+		F4B8646E2848676D0086628E /* AnimalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8646D2848676D0086628E /* AnimalEntity.swift */; };
+		F4B86470284867970086628E /* AnimalEnvironmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8646F284867970086628E /* AnimalEnvironmentEntity.swift */; };
+		F4B86474284867F70086628E /* APIColorsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B86473284867F70086628E /* APIColorsEntity.swift */; };
+		F4B86476284868220086628E /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B86475284868220086628E /* ContactEntity.swift */; };
+		F4B86478284868510086628E /* OrganizationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B86477284868510086628E /* OrganizationEntity.swift */; };
+		F4B8647A284868760086628E /* PhotoSizesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B86479284868760086628E /* PhotoSizesEntity.swift */; };
+		F4B8647C2848689A0086628E /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8647B2848689A0086628E /* TagEntity.swift */; };
+		F4B8647E284868C40086628E /* VideoLinkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8647D284868C40086628E /* VideoLinkEntity.swift */; };
+		F4B86480284869170086628E /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8647F284869170086628E /* UserEntity.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
 		F4DEA0C228461E77001A5C7E /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */; };
@@ -155,6 +166,17 @@
 		F4B863FF284476650086628E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F4B8640128447C440086628E /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		F4B8640428448FF00086628E /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
+		F4B86469284866F70086628E /* AddressEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntity.swift; sourceTree = "<group>"; };
+		F4B8646B2848673D0086628E /* AnimalAttributesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAttributesEntity.swift; sourceTree = "<group>"; };
+		F4B8646D2848676D0086628E /* AnimalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEntity.swift; sourceTree = "<group>"; };
+		F4B8646F284867970086628E /* AnimalEnvironmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEnvironmentEntity.swift; sourceTree = "<group>"; };
+		F4B86473284867F70086628E /* APIColorsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIColorsEntity.swift; sourceTree = "<group>"; };
+		F4B86475284868220086628E /* ContactEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEntity.swift; sourceTree = "<group>"; };
+		F4B86477284868510086628E /* OrganizationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationEntity.swift; sourceTree = "<group>"; };
+		F4B86479284868760086628E /* PhotoSizesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSizesEntity.swift; sourceTree = "<group>"; };
+		F4B8647B2848689A0086628E /* TagEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
+		F4B8647D284868C40086628E /* VideoLinkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLinkEntity.swift; sourceTree = "<group>"; };
+		F4B8647F284869170086628E /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
 		F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
@@ -235,9 +257,9 @@
 		685F03D2C0BF16BFCE44CAEB /* coreData */ = {
 			isa = PBXGroup;
 			children = (
+				F4B86466284858280086628E /* entities */,
 				685F03E6A14C8B2558A323F8 /* Persistence.swift */,
 				F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */,
-				685F043537C5FC1CDFB6E471 /* Item.swift */,
 			);
 			path = coreData;
 			sourceTree = "<group>";
@@ -554,6 +576,25 @@
 			path = auth;
 			sourceTree = "<group>";
 		};
+		F4B86466284858280086628E /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				F4B86469284866F70086628E /* AddressEntity.swift */,
+				F4B8646B2848673D0086628E /* AnimalAttributesEntity.swift */,
+				F4B8646D2848676D0086628E /* AnimalEntity.swift */,
+				F4B8646F284867970086628E /* AnimalEnvironmentEntity.swift */,
+				F4B86473284867F70086628E /* APIColorsEntity.swift */,
+				F4B86475284868220086628E /* ContactEntity.swift */,
+				685F043537C5FC1CDFB6E471 /* Item.swift */,
+				F4B86477284868510086628E /* OrganizationEntity.swift */,
+				F4B86479284868760086628E /* PhotoSizesEntity.swift */,
+				F4B8647B2848689A0086628E /* TagEntity.swift */,
+				F4B8647F284869170086628E /* UserEntity.swift */,
+				F4B8647D284868C40086628E /* VideoLinkEntity.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -685,11 +726,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B86470284867970086628E /* AnimalEnvironmentEntity.swift in Sources */,
 				F40447AD283DDC0A008BC67C /* ContentView.swift in Sources */,
 				F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */,
+				F4B8647C2848689A0086628E /* TagEntity.swift in Sources */,
 				F40447E0283F7FB6008BC67C /* AnimalDetailCard.swift in Sources */,
 				685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */,
 				685F09964C3811C0D5B2B127 /* Persistence.swift in Sources */,
+				F4B86480284869170086628E /* UserEntity.swift in Sources */,
 				F413615B2844A8D700E9FF50 /* AnimalsContainer.swift in Sources */,
 				F4B8640228447C440086628E /* RequestManager.swift in Sources */,
 				F41AB6332840B32E002959E0 /* AnimalSearchAge.swift in Sources */,
@@ -699,12 +743,14 @@
 				685F0EA536FBED95B5933129 /* Organization.swift in Sources */,
 				F41AB62F2840AE4B002959E0 /* AnimalsNearYouView.swift in Sources */,
 				F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */,
+				F4B8647E284868C40086628E /* VideoLinkEntity.swift in Sources */,
 				F40447E4284012AB008BC67C /* AnimalDetailsView.swift in Sources */,
 				685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */,
 				F41AB64228421E92002959E0 /* AnimalsMock.swift in Sources */,
 				685F0A6353D62F977CD0C5EE /* Age.swift in Sources */,
 				F41361592844A44500E9FF50 /* AnimalsRequest.swift in Sources */,
 				F41AB6402841FAFC002959E0 /* Animal.swift in Sources */,
+				F4B86478284868510086628E /* OrganizationEntity.swift in Sources */,
 				F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */,
 				685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */,
 				685F06D28DFB769FD4DF0CF3 /* AnimalEnvironment.swift in Sources */,
@@ -712,7 +758,9 @@
 				685F096ACCCF93ECDED3F94F /* APIColors.swift in Sources */,
 				685F007A33ED20F901DDAF51 /* Breed.swift in Sources */,
 				F4B863FE28446DB00086628E /* RequestType.swift in Sources */,
+				F4B8647A284868760086628E /* PhotoSizesEntity.swift in Sources */,
 				685F0C7D83B47F977097386A /* Coat.swift in Sources */,
+				F4B8646E2848676D0086628E /* AnimalEntity.swift in Sources */,
 				685F02252A78A83357679B31 /* Gender.swift in Sources */,
 				685F0F0966E956D698E56EE3 /* Pagination.swift in Sources */,
 				685F046067A986C1282D48C3 /* PhotoSizes.swift in Sources */,
@@ -720,7 +768,9 @@
 				685F0FB99AA5278A56B72AEB /* VideoLink.swift in Sources */,
 				685F008592E1C0B05109462C /* Details.swift in Sources */,
 				685F01CE38FEC890EB35003D /* AddressFetcher.swift in Sources */,
+				F4B8646A284866F70086628E /* AddressEntity.swift in Sources */,
 				F41AB63C2840CF42002959E0 /* SearchView.swift in Sources */,
+				F4B86474284867F70086628E /* APIColorsEntity.swift in Sources */,
 				F41AB63A2840CDBF002959E0 /* EmptyResultsView.swift in Sources */,
 				F40447E22840122E008BC67C /* AnimalDetailRow.swift in Sources */,
 				F41AB6352840BAB5002959E0 /* AnimalSearchType.swift in Sources */,
@@ -728,6 +778,8 @@
 				685F0EE6C35111CB352B9A83 /* LocationManager.swift in Sources */,
 				F40A3DD1283F326A00ED1D89 /* AnimalContactLink.swift in Sources */,
 				F4B863FC28446BB80086628E /* RequestProtocol.swift in Sources */,
+				F4B86476284868220086628E /* ContactEntity.swift in Sources */,
+				F4B8646C2848673D0086628E /* AnimalAttributesEntity.swift in Sources */,
 				685F0EC1ED0ADDD49E851BAB /* Item.swift in Sources */,
 				F4B86400284476650086628E /* APIManager.swift in Sources */,
 				685F05C38308779AB9FDC459 /* AnimalRow.swift in Sources */,

@@ -42,6 +42,11 @@
         <relationship name="environment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AnimalEnvironmentEntity" inverseName="animal" inverseEntity="AnimalEnvironmentEntity"/>
         <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoSizesEntity" inverseName="animal" inverseEntity="PhotoSizesEntity"/>
         <relationship name="videos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VideoLinkEntity" inverseName="animal" inverseEntity="VideoLinkEntity"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="AnimalEnvironmentEntity" representedClassName="AnimalEnvironmentEntity" syncable="YES">
         <attribute name="cats" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
@@ -63,7 +68,7 @@
         <attribute name="phone" optional="YES" attributeType="String"/>
         <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AddressEntity" inverseName="contact" inverseEntity="AddressEntity"/>
         <relationship name="animal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AnimalEntity" inverseName="contact" inverseEntity="AnimalEntity"/>
-        <relationship name="organization" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrganizationEntity" inverseName="contact" inverseEntity="OrganizationEntity"/>
+        <relationship name="organization" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrganizationEntity" inverseName="contact" inverseEntity="OrganizationEntity"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>

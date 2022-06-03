@@ -33,4 +33,10 @@ extension AddressEntity {
     @NSManaged public func removeFromContact(_ values: NSSet)
 }
 
+extension AddressEntity {
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<AddressEntity> {
+        NSFetchRequest<AddressEntity>(entityName: "AddressEntity")
+    }
+}
+
 extension AddressEntity: Identifiable {}

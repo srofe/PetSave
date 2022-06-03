@@ -10,4 +10,5 @@ class Item: NSManagedObject {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Item> {
         NSFetchRequest<Item>(entityName: "Item")
+    }
 }

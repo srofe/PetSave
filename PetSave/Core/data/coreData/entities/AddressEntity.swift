@@ -17,7 +17,13 @@ public class AddressEntity: NSManagedObject {
     @NSManaged public var state: String
     @NSManaged public var country: String
     @NSManaged public var contact: NSSet?
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<AddressEntity> {
+        NSFetchRequest<AddressEntity>(entityName: "AddressEntity")
+    }
 }
+
+extension AddressEntity: Identifiable {}
 
 extension AddressEntity {
     @objc(addContactObject:)
@@ -32,11 +38,3 @@ extension AddressEntity {
     @objc(removeContact:)
     @NSManaged public func removeFromContact(_ values: NSSet)
 }
-
-extension AddressEntity {
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<AddressEntity> {
-        NSFetchRequest<AddressEntity>(entityName: "AddressEntity")
-    }
-}
-
-extension AddressEntity: Identifiable {}

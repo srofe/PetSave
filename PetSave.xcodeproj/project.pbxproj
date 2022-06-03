@@ -16,6 +16,7 @@
 		685F041F7C72A52E088EDB36 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0E487254674884A189FA /* CoreDataHelper.swift */; };
 		685F044B375075622AB6A16F /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F058782C4A1D3B63FF5EE /* DataParser.swift */; };
 		685F044BFE62B9DD3C3B9114 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0D84A83FF722DE2116CC /* NetworkError.swift */; };
+		685F0455086B5191855DB48B /* Address+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0C53A4E8FF4402E18C27 /* Address+CoreData.swift */; };
 		685F046067A986C1282D48C3 /* PhotoSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0673683B0470B3BD7968 /* PhotoSizes.swift */; };
 		685F04618B4C7A2EC4F5DF3F /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0022CAE79D1014208340 /* APIToken.swift */; };
 		685F05B91FC6A5707F1C3559 /* AnimalsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F033BBDBDCAC0FFA586BA /* AnimalsRequestMock.swift */; };
@@ -127,6 +128,7 @@
 		685F0787DBDA8180C383BD4D /* Age.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Age.swift; sourceTree = "<group>"; };
 		685F08A077F78C04C13BFECC /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		685F09518B6F2DE4394699FD /* Coat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coat.swift; sourceTree = "<group>"; };
+		685F0C53A4E8FF4402E18C27 /* Address+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreData.swift"; sourceTree = "<group>"; };
 		685F0CBA197E3C831C5F640B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		685F0CC50D12EF703694CAFF /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		685F0D4F27CA8D6CD9A61518 /* VideoLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLink.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				685F03E6A14C8B2558A323F8 /* Persistence.swift */,
 				F40447DA283E14E7008BC67C /* PetSave.xcdatamodeld */,
 				685F0E487254674884A189FA /* CoreDataHelper.swift */,
+				685F0A93E2BA75A71B941AB2 /* extensions */,
 			);
 			path = coreData;
 			sourceTree = "<group>";
@@ -325,6 +328,14 @@
 				685F058782C4A1D3B63FF5EE /* DataParser.swift */,
 			);
 			path = parser;
+			sourceTree = "<group>";
+		};
+		685F0A93E2BA75A71B941AB2 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				685F0C53A4E8FF4402E18C27 /* Address+CoreData.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		685F0B65863F3B94636E73D6 /* model */ = {
@@ -794,6 +805,7 @@
 				685F0911D3080383BB7C20DC /* Media.swift in Sources */,
 				685F070668D9A93C2BE2CBC7 /* AppUserDefaultsKeys.swift in Sources */,
 				685F041F7C72A52E088EDB36 /* CoreDataHelper.swift in Sources */,
+				685F0455086B5191855DB48B /* Address+CoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

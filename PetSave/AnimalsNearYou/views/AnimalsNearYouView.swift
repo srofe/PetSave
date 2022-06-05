@@ -43,6 +43,7 @@ struct AnimalsNearYouView: View {
             self.animals = animals
             await stopLoading()
         } catch {
+            print("Error fetching animals...\(error)")
         }
     }
 

@@ -32,6 +32,7 @@
 		685F0A6353D62F977CD0C5EE /* Age.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0787DBDA8180C383BD4D /* Age.swift */; };
 		685F0A95B2977B07163CA8CF /* PetSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F00E8BA471C5802E80660 /* PetSaveTests.swift */; };
 		685F0C024FDDF1C645D344AE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F02DE6D61DCB17F9059BD /* Size.swift */; };
+		685F0C3042ADBCCE0A229806 /* AnimalEnvironment+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0F827C44AFC723884C66 /* AnimalEnvironment+CoreData.swift */; };
 		685F0C43F845683A40286A89 /* AnimalsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 685F045713A1B73C1DCEB130 /* AnimalsMock.json */; };
 		685F0C59D51D53CC6CC0F73E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F05BF413DEBFA26085669 /* APIConstants.swift */; };
 		685F0C62C2074C20FEC6F6A7 /* APIManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F06276716C323F0CAAB7A /* APIManagerMock.swift */; };
@@ -142,6 +143,7 @@
 		685F0E4815E88CEEA820A8FA /* RequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
 		685F0E487254674884A189FA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		685F0ECEC6F7E116DE14ED97 /* AnimalRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
+		685F0F827C44AFC723884C66 /* AnimalEnvironment+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEnvironment+CoreData.swift"; sourceTree = "<group>"; };
 		685F0FA841D436CD5385CF00 /* AnimalEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalEnvironment.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40447AA283DDC0A008BC67C /* PetSaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveApp.swift; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				685F0C53A4E8FF4402E18C27 /* Address+CoreData.swift */,
 				685F027C49A34711AFC430AE /* Animal+CoreData.swift */,
 				685F05587A5437F1153EB241 /* AnimalAttributes+CoreData.swift */,
+				685F0F827C44AFC723884C66 /* AnimalEnvironment+CoreData.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -814,6 +817,7 @@
 				685F0455086B5191855DB48B /* Address+CoreData.swift in Sources */,
 				685F06DC2B6276F625604BD4 /* Animal+CoreData.swift in Sources */,
 				685F03F1D9FC0D3FC04A3267 /* AnimalAttributes+CoreData.swift in Sources */,
+				685F0C3042ADBCCE0A229806 /* AnimalEnvironment+CoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

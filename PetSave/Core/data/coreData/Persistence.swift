@@ -36,4 +36,18 @@ struct PersistenceController {
         container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
+
+    static func save() {
+        let context = PersistenceController.shared.container.viewContext
+        guard context.hasChanges else { return }
+        do {
+            try context.save()
+        } catch {
+            fatalError("""
+                \(#file), \
+                \(#function), \
+                \(error.localizedDescription)
+            """)
+        }
+    }
 }

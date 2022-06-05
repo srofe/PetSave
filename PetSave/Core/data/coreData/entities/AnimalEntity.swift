@@ -31,6 +31,7 @@ public class AnimalEntity: NSManagedObject {
     @NSManaged public var environment: AnimalEnvironmentEntity?
     @NSManaged public var photos: NSSet?
     @NSManaged public var videos: NSSet?
+    @NSManaged public var breeds: BreedEntity?
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<AnimalEntity> {
         NSFetchRequest<AnimalEntity>(entityName: "AnimalEntity")

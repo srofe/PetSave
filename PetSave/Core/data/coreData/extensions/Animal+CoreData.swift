@@ -5,7 +5,17 @@
 import CoreData
 
 extension AnimalEntity {
-    // TODO: Add the age property here
+    var age: Age {
+        get {
+            guard let ageValue = ageValue, let age = Age(rawValue: ageValue) else {
+                return Age.unknown
+            }
+            return age
+        }
+        set {
+            self.ageValue = newValue.rawValue
+        }
+    }
 
     var coat: Coat {
         get {

@@ -75,6 +75,7 @@
 		F41AB6402841FAFC002959E0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB63F2841FAFC002959E0 /* Animal.swift */; };
 		F41AB64228421E92002959E0 /* AnimalsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41AB64128421E92002959E0 /* AnimalsMock.swift */; };
 		F431788A284D9A480046A7C9 /* CoreDataPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4317889284D9A480046A7C9 /* CoreDataPersistable.swift */; };
+		F431788C284DA4A90046A7C9 /* Breed+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431788B284DA4A90046A7C9 /* Breed+CoreData.swift */; };
 		F462F086284C8E3700A5FCC9 /* BreedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462F085284C8E3700A5FCC9 /* BreedEntity.swift */; };
 		F4B863FC28446BB80086628E /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FB28446BB80086628E /* RequestProtocol.swift */; };
 		F4B863FE28446DB00086628E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B863FD28446DB00086628E /* RequestType.swift */; };
@@ -186,6 +187,7 @@
 		F41AB63F2841FAFC002959E0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		F41AB64128421E92002959E0 /* AnimalsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsMock.swift; sourceTree = "<group>"; };
 		F4317889284D9A480046A7C9 /* CoreDataPersistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistable.swift; sourceTree = "<group>"; };
+		F431788B284DA4A90046A7C9 /* Breed+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+CoreData.swift"; sourceTree = "<group>"; };
 		F462F085284C8E3700A5FCC9 /* BreedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedEntity.swift; sourceTree = "<group>"; };
 		F4B863FB28446BB80086628E /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		F4B863FD28446DB00086628E /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				685F096C09CB79B279976928 /* User+CoreData.swift */,
 				685F007464F531A224DD24F7 /* VideoLink+CoreData.swift */,
 				F4317889284D9A480046A7C9 /* CoreDataPersistable.swift */,
+				F431788B284DA4A90046A7C9 /* Breed+CoreData.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				F41AB63E2840CF9D002959E0 /* SuggestionsGrid.swift in Sources */,
 				685F0F52D7F9430029538527 /* User.swift in Sources */,
 				685F0EA536FBED95B5933129 /* Organization.swift in Sources */,
+				F431788C284DA4A90046A7C9 /* Breed+CoreData.swift in Sources */,
 				F462F086284C8E3700A5FCC9 /* BreedEntity.swift in Sources */,
 				F41AB62F2840AE4B002959E0 /* AnimalsNearYouView.swift in Sources */,
 				F40447DE283F7F2B008BC67C /* AnimalContactsView.swift in Sources */,

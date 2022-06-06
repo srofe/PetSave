@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnimalsNearYouView: View {
-    @State var animals: [Animal] = []
+    @State var animals: [AnimalEntity] = []
     @State var isLoading = true
     private let requestManager = RequestManager()
 
@@ -39,8 +39,9 @@ struct AnimalsNearYouView: View {
                 page: 1,
                 latitude: nil,
                 longitude: nil))
-            let animals = animalsContainer.animals
-            self.animals = animals
+            for var animal in animalsContainer.animals {
+                animal.toManagedObject()
+            }
             await stopLoading()
         } catch {
             print("Error fetching animals...\(error)")
@@ -55,6 +56,8 @@ struct AnimalsNearYouView: View {
 
 struct AnimalsNearYouView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalsNearYouView(animals: Animal.mock, isLoading: false)
+        if let animals = CoreDataHelper.getTestAnimalEntities() {
+            AnimalsNearYouView(animals: animals, isLoading: false)
+        }
     }
 }

@@ -78,4 +78,8 @@ extension CoreDataPersistable where ManagedType: NSManagedObject {
         }
         return persistedValue
     }
+
+    func save(context: NSManagedObjectContext = PersistenceController.shared.container.viewContext) throws {
+        try context.save()
+    }
 }

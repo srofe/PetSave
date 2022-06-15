@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let managedObjectContext = PersistenceController.shared.container.viewContext
+
     var body: some View {
         TabView {
             AnimalsNearYouView()
+                .environment(\.managedObjectContext, managedObjectContext)
                 .tabItem {
                     Label("Near you", systemImage: "location")
                 }

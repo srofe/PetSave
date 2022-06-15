@@ -8,26 +8,22 @@
 import SwiftUI
 
 struct AnimalsNearYouView: View {
-    @SectionedFetchRequest<String, AnimalEntity>(
-        sectionIdentifier: \AnimalEntity.animalSpecies,
+    @FetchRequest(
         sortDescriptors: [
             NSSortDescriptor(keyPath: \AnimalEntity.timestamp, ascending: true)
         ],
         animation: .default
-    ) var sectionedAnimals: SectionedFetchResults<String, AnimalEntity>
+    )
+    private var animals: FetchedResults<AnimalEntity>
     @State var isLoading = true
     private let requestManager = RequestManager()
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(sectionedAnimals) { animals in
-                    Section(header: Text(animals.id)) {
-                        ForEach(animals) { animal in
-                            NavigationLink(destination: AnimalDetailsView()) {
-                                AnimalRow(animal: animal)
-                            }
-                        }
+                ForEach(animals) { animal in
+                    NavigationLink(destination: AnimalDetailsView()) {
+                        AnimalRow(animal: animal)
                     }
                 }
             }
@@ -37,7 +33,7 @@ struct AnimalsNearYouView: View {
             .listStyle(.plain)
             .navigationTitle("Animals near you")
             .overlay {
-                if isLoading {
+                if isLoading && animals.isEmpty {
                     ProgressView("Finding Animals near you...")
                 }
             }

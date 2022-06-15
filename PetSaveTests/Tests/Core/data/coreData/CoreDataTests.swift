@@ -47,4 +47,15 @@ class CoreDataTests: XCTestCase {
         The number of results was expected to be \(expectedResult) after deletion, was \(resultsAfterDeletion.count)
         """)
     }
+
+    func testFetchMangedObject() throws {
+        let previewContext = PersistenceController.preview.container.viewContext
+        let fetchRequest = AnimalEntity.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        fetchRequest.predicate = NSPredicate(format: "name == %@", "Ellie")
+        guard let results = try? previewContext.fetch(fetchRequest), let first = results.first else { return }
+        XCTAssertEqual(first.name, "Ellie", """
+        Pet name did not match, expecting Ellie, got \(String(describing: first.name))
+        """)
+    }
 }

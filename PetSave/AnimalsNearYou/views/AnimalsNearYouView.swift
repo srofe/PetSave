@@ -15,8 +15,7 @@ struct AnimalsNearYouView: View {
         animation: .default
     )
     private var animals: FetchedResults<AnimalEntity>
-    @State var isLoading = true
-    private let requestManager = RequestManager()
+    @ObservedObject var viewModel: AnimalsNearYouViewModel
 
     var body: some View {
         NavigationView {
@@ -28,12 +27,12 @@ struct AnimalsNearYouView: View {
                 }
             }
             .task {
-                await fetchAnimals()
+                await viewModel.fetchAnimals()
             }
             .listStyle(.plain)
             .navigationTitle("Animals near you")
             .overlay {
-                if isLoading && animals.isEmpty {
+                if viewModel.isLoading && animals.isEmpty {
                     ProgressView("Finding Animals near you...")
                 }
             }
@@ -41,30 +40,15 @@ struct AnimalsNearYouView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
 
-    func fetchAnimals() async {
-        do {
-            let animalsContainer: AnimalsContainer = try await requestManager.perform(AnimalsRequest.getAnimalsWith(
-                page: 1,
-                latitude: nil,
-                longitude: nil))
-            for var animal in animalsContainer.animals {
-                animal.toManagedObject()
-            }
-            await stopLoading()
-        } catch {
-            print("Error fetching animals...\(error)")
-        }
-    }
-
     @MainActor
     func stopLoading() async {
-        isLoading = false
+        viewModel.isLoading = false
     }
 }
 
 struct AnimalsNearYouView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalsNearYouView(isLoading: false)
+        AnimalsNearYouView(viewModel: AnimalsNearYouViewModel())
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

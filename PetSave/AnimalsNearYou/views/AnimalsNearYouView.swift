@@ -44,7 +44,8 @@ struct AnimalsNearYouView: View {
 struct AnimalsNearYouView_Previews: PreviewProvider {
     static var previews: some View {
         AnimalsNearYouView(viewModel: AnimalsNearYouViewModel(
-            animalFetcher: AnimalsFetcherMock()
+            animalFetcher: AnimalsFetcherMock(),
+            animalStore: AnimalStoreService(context: CoreDataHelper.previewContext)
         ))
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }

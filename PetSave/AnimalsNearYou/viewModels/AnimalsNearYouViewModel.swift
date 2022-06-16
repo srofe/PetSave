@@ -13,27 +13,18 @@ protocol AnimalsFetcher {
 
 final class AnimalsNearYouViewModel: ObservableObject {
     @Published var isLoading = true
-    private let requestManager = RequestManager()
+    private let animalFetcher: AnimalsFetcher
 
-    init(isLoading: Bool = true) {
+    init(isLoading: Bool = true, animalFetcher: AnimalsFetcher) {
         self.isLoading = isLoading
+        self.animalFetcher = animalFetcher
     }
 
     func fetchAnimals() async {
-        do {
-            let animalsContainer: AnimalsContainer = try await requestManager.perform(
-                AnimalsRequest.getAnimalsWith(
-                    page: 1,
-                    latitude: nil,
-                    longitude: nil
-                )
-            )
-            for var animal in animalsContainer.animals {
-                animal.toManagedObject()
-            }
-            isLoading = false
-        } catch {
-            print("Error fetching anumals... \(error.localizedDescription)")
+        let animals = await animalFetcher.fetchAnimals(page: 1)
+        for var animal in animals {
+            animal.toManagedObject()
         }
+        isLoading = false
     }
 }

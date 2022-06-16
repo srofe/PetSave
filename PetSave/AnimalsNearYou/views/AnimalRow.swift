@@ -39,6 +39,20 @@ struct AnimalRow: View {
                         .lineLimit(2)
                         .font(.footnote)
                 }
+                HStack {
+                    Text(animal.age.rawValue)
+                        .padding(4)
+                        .background(animal.age.color.opacity(0.2))
+                        .cornerRadius(8)
+                        .foregroundColor(animal.age.color)
+                        .font(.subheadline)
+                    Text(animal.gender.rawValue)
+                        .padding(4)
+                        .background(.pink.opacity(0.2))
+                        .cornerRadius(8)
+                        .foregroundColor(.pink)
+                        .font(.subheadline)
+                }
             }
             .lineLimit(1)
         }

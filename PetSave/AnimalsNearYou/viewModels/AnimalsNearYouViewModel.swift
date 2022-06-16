@@ -11,6 +11,7 @@ protocol AnimalsFetcher {
     func fetchAnimals(page: Int) async -> [Animal]
 }
 
+@MainActor
 final class AnimalsNearYouViewModel: ObservableObject {
     @Published var isLoading = true
     private let animalFetcher: AnimalsFetcher

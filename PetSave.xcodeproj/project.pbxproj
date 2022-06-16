@@ -10,6 +10,7 @@
 		685F0061C2A25FABD45A7B36 /* AdoptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F02E218A2758118EF3695 /* AdoptionStatus.swift */; };
 		685F007A33ED20F901DDAF51 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0748E77130F165E6D4FE /* Breed.swift */; };
 		685F008592E1C0B05109462C /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F060024F21DB4B9C24D87 /* Details.swift */; };
+		685F0158F9E2825DA5F17AAE /* FetchAnimalsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0ECE70597438EE713341 /* FetchAnimalsService.swift */; };
 		685F01CE38FEC890EB35003D /* AddressFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0E1EDA9F07A8AB7258E0 /* AddressFetcher.swift */; };
 		685F02252A78A83357679B31 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0CC50D12EF703694CAFF /* Gender.swift */; };
 		685F034926C187C5E1F3E266 /* APIColors+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F09721648290F15976453 /* APIColors+CoreData.swift */; };
@@ -159,6 +160,7 @@
 		685F0E1EDA9F07A8AB7258E0 /* AddressFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFetcher.swift; sourceTree = "<group>"; };
 		685F0E4815E88CEEA820A8FA /* RequestManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
 		685F0E487254674884A189FA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		685F0ECE70597438EE713341 /* FetchAnimalsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAnimalsService.swift; sourceTree = "<group>"; };
 		685F0ECEC6F7E116DE14ED97 /* AnimalRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		685F0EF657EB938997BC147C /* Contact+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreData.swift"; sourceTree = "<group>"; };
 		685F0F827C44AFC723884C66 /* AnimalEnvironment+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEnvironment+CoreData.swift"; sourceTree = "<group>"; };
@@ -315,6 +317,14 @@
 				685F0CBA197E3C831C5F640B /* User.swift */,
 			);
 			path = user;
+			sourceTree = "<group>";
+		};
+		685F070E7BD076B21D965F55 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				685F0ECE70597438EE713341 /* FetchAnimalsService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		685F078B0235099F47A50B43 /* model */ = {
@@ -573,6 +583,7 @@
 			children = (
 				F446E0FC285B0F63004E52B0 /* viewModels */,
 				F41AB62D2840AE36002959E0 /* views */,
+				685F070E7BD076B21D965F55 /* services */,
 			);
 			path = AnimalsNearYou;
 			sourceTree = "<group>";
@@ -872,6 +883,7 @@
 				685F0B80FFBBD44B95B2840F /* User+CoreData.swift in Sources */,
 				685F05AF00102C60CFE1511F /* VideoLink+CoreData.swift in Sources */,
 				F431788A284D9A480046A7C9 /* CoreDataPersistable.swift in Sources */,
+				685F0158F9E2825DA5F17AAE /* FetchAnimalsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

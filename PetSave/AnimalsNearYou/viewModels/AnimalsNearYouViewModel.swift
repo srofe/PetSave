@@ -7,6 +7,10 @@
 
 import Combine
 
+protocol AnimalsFetcher {
+    func fetchAnimals(page: Int) async -> [Animal]
+}
+
 final class AnimalsNearYouViewModel: ObservableObject {
     @Published var isLoading = true
     private let requestManager = RequestManager()

@@ -39,11 +39,6 @@ struct AnimalsNearYouView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-
-    @MainActor
-    func stopLoading() async {
-        viewModel.isLoading = false
-    }
 }
 
 struct AnimalsNearYouView_Previews: PreviewProvider {

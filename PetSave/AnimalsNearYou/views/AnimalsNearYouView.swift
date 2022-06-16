@@ -25,6 +25,14 @@ struct AnimalsNearYouView: View {
                         AnimalRow(animal: animal)
                     }
                 }
+                if !animals.isEmpty && viewModel.hasMoreAnimals {
+                    ProgressView("Finding more animals...")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .task {
+                            await viewModel.fetchMoreAnimals()
+                        }
+                }
             }
             .task {
                 await viewModel.fetchAnimals()

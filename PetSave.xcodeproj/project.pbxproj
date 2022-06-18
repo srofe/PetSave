@@ -102,6 +102,7 @@
 		F4B8647E284868C40086628E /* VideoLinkEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8647D284868C40086628E /* VideoLinkEntity.swift */; };
 		F4B86480284869170086628E /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8647F284869170086628E /* UserEntity.swift */; };
 		F4C16F62285D9ECC002113B5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16F61285D9ECC002113B5 /* SearchViewModel.swift */; };
+		F4C16F65285D9FB8002113B5 /* AnimalSearcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16F64285D9FB8002113B5 /* AnimalSearcherService.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
 		F4DEA0C228461E77001A5C7E /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */; };
@@ -223,6 +224,7 @@
 		F4B8647D284868C40086628E /* VideoLinkEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLinkEntity.swift; sourceTree = "<group>"; };
 		F4B8647F284869170086628E /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		F4C16F61285D9ECC002113B5 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		F4C16F64285D9FB8002113B5 /* AnimalSearcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearcherService.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
 		F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
@@ -630,6 +632,7 @@
 		F41AB6302840AF0A002959E0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F4C16F63285D9FAA002113B5 /* services */,
 				F4C16F60285D9EB4002113B5 /* viewModels */,
 				F41AB6362840BC49002959E0 /* views */,
 				F41AB6312840AF1E002959E0 /* models */,
@@ -710,6 +713,14 @@
 				F4C16F61285D9ECC002113B5 /* SearchViewModel.swift */,
 			);
 			path = viewModels;
+			sourceTree = "<group>";
+		};
+		F4C16F63285D9FAA002113B5 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F4C16F64285D9FB8002113B5 /* AnimalSearcherService.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -887,6 +898,7 @@
 				685F0FB99AA5278A56B72AEB /* VideoLink.swift in Sources */,
 				685F008592E1C0B05109462C /* Details.swift in Sources */,
 				685F01CE38FEC890EB35003D /* AddressFetcher.swift in Sources */,
+				F4C16F65285D9FB8002113B5 /* AnimalSearcherService.swift in Sources */,
 				F4B8646A284866F70086628E /* AddressEntity.swift in Sources */,
 				F41AB63C2840CF42002959E0 /* SearchView.swift in Sources */,
 				F4B86474284867F70086628E /* APIColorsEntity.swift in Sources */,

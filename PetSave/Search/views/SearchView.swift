@@ -8,10 +8,27 @@
 import SwiftUI
 
 struct SearchView: View {
+    @FetchRequest(
+        sortDescriptors: [
+            NSSortDescriptor(
+                keyPath: \AnimalEntity.timestamp, ascending: true
+            )
+        ],
+        animation: .default
+    )
+    private var animals: FetchedResults<AnimalEntity>
+
     var body: some View {
         NavigationView {
-            Text("TODO: Search View")
-                .navigationTitle("Find your future pet")
+            List {
+                ForEach(animals) { animal in
+                    NavigationLink(destination: AnimalDetailsView()) {
+                        AnimalRow(animal: animal)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Find your future pet")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

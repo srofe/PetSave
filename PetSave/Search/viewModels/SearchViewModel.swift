@@ -46,4 +46,9 @@ final class SearchViewModel: ObservableObject {
             }
         }
     }
+
+    func clearFilters() {
+        typeSelection = .none
+        ageSelection = .none
+    }
 }

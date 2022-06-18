@@ -36,6 +36,9 @@ struct SearchView: View {
             AnimalListView(animals: filteredAnimals)
                 .navigationTitle("Find your future pet")
                 .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
+                .onChange(of: viewModel.searchText) { _ in
+                    viewModel.search()
+                }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

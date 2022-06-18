@@ -17,8 +17,12 @@ protocol AnimalSearcher {
 
 final class SearchViewModel: ObservableObject {
     @Published var searchText = ""
+    @Published var ageSelection = AnimalSearchAge.none
+    @Published var typeSelection = AnimalSearchType.none
     var shouldFilter: Bool {
-        !searchText.isEmpty
+        !searchText.isEmpty ||
+        ageSelection != .none ||
+        typeSelection != .none
     }
     private let animalSearcher: AnimalSearcher
     private let animalStore: AnimalStore
@@ -32,8 +36,8 @@ final class SearchViewModel: ObservableObject {
         Task {
             let animals = await animalSearcher.searchAnimal(
                 by: searchText,
-                age: .none,
-                type: .none
+                age: ageSelection,
+                type: typeSelection
             )
             do {
                 try await animalStore.save(animals: animals)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AnimalsSearcherMock: AnimalSearcher {
+struct AnimalSearcherMock: AnimalSearcher {
     func searchAnimal(
         by text: String,
         age: AnimalSearchAge,

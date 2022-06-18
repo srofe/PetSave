@@ -39,6 +39,11 @@ struct SearchView: View {
                 .onChange(of: viewModel.searchText) { _ in
                     viewModel.search()
                 }
+                .overlay {
+                    if filteredAnimals.isEmpty && !viewModel.searchText.isEmpty {
+                        EmptyResultsView(query: viewModel.searchText)
+                    }
+                }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

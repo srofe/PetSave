@@ -23,14 +23,17 @@ struct SearchView: View {
     )
     var filteredAnimals: [AnimalEntity] {
         guard viewModel.shouldFilter else { return [] }
-        return animals.filter {
-            if viewModel.searchText.isEmpty {
-                return true
-            }
-            return $0.name?.contains(viewModel.searchText) ?? false
-        }
+        return filterAnimals()
     }
     @State var filterPickerIsPresented = false
+    private var filterAnimals: FilterAnimals {
+        FilterAnimals(
+            animals: animals,
+            query: viewModel.searchText,
+            age: viewModel.ageSelection,
+            type: viewModel.typeSelection
+        )
+    }
 
     var body: some View {
         NavigationView {
@@ -54,7 +57,7 @@ struct SearchView: View {
                         }
                         .sheet(isPresented: $filterPickerIsPresented) {
                             NavigationView {
-                                SearchFilterView(viewModel: viewModels)
+                                SearchFilterView(viewModel: viewModel )
                             }
                         }
                     }

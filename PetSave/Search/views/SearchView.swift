@@ -30,6 +30,7 @@ struct SearchView: View {
             return $0.name?.contains(viewModel.searchText) ?? false
         }
     }
+    @State var filterPickerIsPresented = false
 
     var body: some View {
         NavigationView {
@@ -42,6 +43,20 @@ struct SearchView: View {
                 .overlay {
                     if filteredAnimals.isEmpty && !viewModel.searchText.isEmpty {
                         EmptyResultsView(query: viewModel.searchText)
+                    }
+                }
+                .toolbar {
+                    ToolbarItem {
+                        Button {
+                            filterPickerIsPresented.toggle()
+                        } label: {
+                            Label("Filter", systemImage: "slider.horizontal.3")
+                        }
+                        .sheet(isPresented: $filterPickerIsPresented) {
+                            NavigationView {
+                                SearchFilterView(viewModel: viewModels)
+                            }
+                        }
                     }
                 }
         }

@@ -62,8 +62,15 @@ struct SearchView: View {
                         }
                     }
                 }
+                .overlay {
+                    if filteredAnimals.isEmpty && viewModel.searchText.isEmpty {
+                        SuggestionsGrid(suggestions: AnimalSearchType.suggestions) { suggestion in
+                            viewModel.selectTypeSuggestion(suggestion)
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                    }
+                }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -35,11 +35,19 @@ class SearchViewModelTestCase: XCTestCase {
         XCTAssertTrue(viewModel.shouldFilter)
     }
 
-    func testShouldFilterIsgrueForAgeFilter() {
+    func testShouldFilterIsTrueForAgeFilter() {
         viewModel.ageSelection = .baby
         XCTAssertTrue(viewModel.searchText.isEmpty)
         XCTAssertEqual(viewModel.ageSelection, .baby)
         XCTAssertEqual(viewModel.typeSelection, .none)
+        XCTAssertTrue(viewModel.shouldFilter)
+    }
+
+    func testShouldFilterIsTrueForTypeFilter() {
+        viewModel.typeSelection = .cat
+        XCTAssertTrue(viewModel.searchText.isEmpty)
+        XCTAssertEqual(viewModel.ageSelection, .none)
+        XCTAssertEqual(viewModel.typeSelection, .cat)
         XCTAssertTrue(viewModel.shouldFilter)
     }
 }

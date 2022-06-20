@@ -8,7 +8,7 @@
 import XCTest
 @testable import PetSave
 
-class SearchViewModelTestCase: XCTestCase {
+final class SearchViewModelTestCase: XCTestCase {
     let testContext = PersistenceController.preview.container.viewContext
     var viewModel: SearchViewModel!
 
@@ -70,5 +70,13 @@ class SearchViewModelTestCase: XCTestCase {
         XCTAssertEqual(viewModel.ageSelection, .none)
         XCTAssertEqual(viewModel.typeSelection, .none)
         XCTAssertFalse(viewModel.shouldFilter)
+    }
+
+    func testSelectTypeSuggestion() {
+        viewModel.selectTypeSuggestion(.cat)
+        XCTAssertTrue(viewModel.searchText.isEmpty)
+        XCTAssertEqual(viewModel.ageSelection, .none)
+        XCTAssertEqual(viewModel.typeSelection, .cat)
+        XCTAssertTrue(viewModel.shouldFilter)
     }
 }

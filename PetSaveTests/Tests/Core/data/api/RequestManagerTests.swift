@@ -12,16 +12,14 @@ class RequestManagerTests: XCTestCase {
         super.setUp()
         guard let userDefaults = UserDefaults(suiteName: #file) else { return }
         userDefaults.removePersistentDomain(forName: #file)
-        requestManager = RequestManager(
+        requestManager = RequestManagerMock(
             apiManager: APIManagerMock(),
             accessTokenManager: AccessTokenManager(userDefaults: userDefaults)
         )
     }
 
     func testRequestAnimals() async throws {
-        guard let container: AnimalsContainer =
-            try await requestManager?.perform(
-                AnimalsRequestMock.getAnimals) else {
+        guard let container: AnimalsContainer = try await requestManager?.perform(AnimalsRequestMock.getAnimals) else {
             XCTFail("Didn't get data from the request manager")
             return
         }

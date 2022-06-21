@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PetSaveOnboardingView: View {
+public struct PetSaveOnboardingView: View {
     @State var currentPageIndex = 0
 
     public init(items: [OnboardingModel]) {

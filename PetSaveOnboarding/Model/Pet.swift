@@ -22,5 +22,5 @@ extension Pet {
             Pet(petImage: .dogBone, position: .init(x: bounds.maxX - 50, y: 50)),
             Pet(petImage: .dogTennisBall, position: .init(x: bounds.minX, y: bounds.maxY - 10))
         ]
-    }
+    }()
 }

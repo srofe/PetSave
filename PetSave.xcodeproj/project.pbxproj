@@ -118,6 +118,7 @@
 		F4DA619E2861551B00348340 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA619D2861551B00348340 /* Bundle+Extension.swift */; };
 		F4DA61A02861552800348340 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA619F2861552800348340 /* Color+Extension.swift */; };
 		F4DA61A22861553200348340 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A12861553200348340 /* Image+Extension.swift */; };
+		F4DA61A42861618500348340 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A32861618500348340 /* OnboardingView.swift */; };
 		F4DEA0C228461E77001A5C7E /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +274,7 @@
 		F4DA619D2861551B00348340 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		F4DA619F2861552800348340 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F4DA61A12861553200348340 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		F4DA61A32861618500348340 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -804,9 +806,10 @@
 			isa = PBXGroup;
 			children = (
 				F4DA619C286154F500348340 /* Extensions */,
+				685F0E19697D65EF784FD82C /* Model */,
 				F4DA61992861542400348340 /* Resources */,
 				F4DA618F2861537500348340 /* PetSaveOnboarding.h */,
-				685F0E19697D65EF784FD82C /* Model */,
+				F4DA61A32861618500348340 /* OnboardingView.swift */,
 			);
 			path = PetSaveOnboarding;
 			sourceTree = "<group>";
@@ -1129,6 +1132,7 @@
 				F4DA61A02861552800348340 /* Color+Extension.swift in Sources */,
 				F4DA61A22861553200348340 /* Image+Extension.swift in Sources */,
 				685F0563C1CE6DABD1F5DFD8 /* OnboardingModel.swift in Sources */,
+				F4DA61A42861618500348340 /* OnboardingView.swift in Sources */,
 				685F0F4768804EA5D4F10818 /* Pet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1418,7 +1422,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1451,7 +1455,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

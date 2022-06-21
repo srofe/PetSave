@@ -30,7 +30,7 @@ struct PetSaveOnboardingView: View {
         } else {
             VStack {
                 TabView(selection: $currentPageIndex) {
-                    ForEach(0 ..< items.count) { index in
+                    ForEach(0 ..< items.count, id: \.self) { index in
                         OnboardingView(onboarding: items[index])
                             .tag(index)
                     }
@@ -96,7 +96,7 @@ private extension PreviewProvider {
         [
             OnboardingModel(
                 title: "Welcome to\nPetSave",
-                description: "Looking for a Pet?\n Then your're at the right place",
+                description: "Looking for a Pet?\n Then you're at the right place",
                 image: .bird
             ),
             OnboardingModel(
@@ -106,7 +106,7 @@ private extension PreviewProvider {
                 nextButtonTitle: "Allow"
             ),
             OnboardingModel(
-                title: "Hearby",
+                title: "Nearby",
                 description: "Find pets to adopt from nearby your place...",
                 image: .chameleon
             )

@@ -119,6 +119,7 @@
 		F4DA61A02861552800348340 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA619F2861552800348340 /* Color+Extension.swift */; };
 		F4DA61A22861553200348340 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A12861553200348340 /* Image+Extension.swift */; };
 		F4DA61A42861618500348340 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A32861618500348340 /* OnboardingView.swift */; };
+		F4DA61A628616C9800348340 /* OnboardingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */; };
 		F4DEA0C228461E77001A5C7E /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -275,6 +276,7 @@
 		F4DA619F2861552800348340 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F4DA61A12861553200348340 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		F4DA61A32861618500348340 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBackgroundView.swift; sourceTree = "<group>"; };
 		F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -810,6 +812,7 @@
 				F4DA61992861542400348340 /* Resources */,
 				F4DA618F2861537500348340 /* PetSaveOnboarding.h */,
 				F4DA61A32861618500348340 /* OnboardingView.swift */,
+				F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */,
 			);
 			path = PetSaveOnboarding;
 			sourceTree = "<group>";
@@ -1130,6 +1133,7 @@
 			files = (
 				F4DA619E2861551B00348340 /* Bundle+Extension.swift in Sources */,
 				F4DA61A02861552800348340 /* Color+Extension.swift in Sources */,
+				F4DA61A628616C9800348340 /* OnboardingBackgroundView.swift in Sources */,
 				F4DA61A22861553200348340 /* Image+Extension.swift in Sources */,
 				685F0563C1CE6DABD1F5DFD8 /* OnboardingModel.swift in Sources */,
 				F4DA61A42861618500348340 /* OnboardingView.swift in Sources */,

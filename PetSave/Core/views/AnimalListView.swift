@@ -19,16 +19,12 @@ struct AnimalListView<Content, Data>: View where Content: View, Data: RandomAcce
         }
     }
 
-    @State var shouldShowDetails: Int? = -1
     var body: some View {
         List {
-            ForEach(Array(animals.enumerated()), id: \.offset) { index, animal in
-                NavigationLink(
-                    animal.name ?? "",
-                    destination: AnimalDetailsView(),
-                    tag: index,
-                    selection: $shouldShowDetails
-                )
+            ForEach(animals) { animal in
+                NavigationLink(destination: AnimalDetailsView(name: animal.name ?? "")) {
+                    AnimalRow(animal: animal)
+                }
             }
             footer
         }

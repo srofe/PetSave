@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct AnimalDetailsView: View {
+    var name: String
+
     var body: some View {
-        Text("TODO: Animal Details")
+        Text(name)
     }
 }
 
 struct AnimalDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            AnimalDetailsView()
+            AnimalDetailsView(name: "Kiki")
         }
         .previewLayout(.sizeThatFits)
-        .previewDisplayName("iPhone SE (2nd generation)")
+        .previewDisplayName("iPhone SE (3rd generation)")
 
         NavigationView {
-            AnimalDetailsView()
+            AnimalDetailsView(name: "Patch")
         }
         .previewDevice("iPhone 12 Pro")
         .previewDisplayName("iPhone 12 Pro")

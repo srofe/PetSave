@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AnimalDetailsView: View {
+    @EnvironmentObject var navigationState: NavigationState
     var name: String
-    @ObservedObject var navigationState: NavigationState
 
     var body: some View {
         Text(name)
@@ -22,13 +22,15 @@ struct AnimalDetailsView: View {
 struct AnimalDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            AnimalDetailsView(name: "Kiki", navigationState: NavigationState())
+            AnimalDetailsView(name: "Kiki")
+                .environmentObject(NavigationState())
         }
         .previewLayout(.sizeThatFits)
         .previewDisplayName("iPhone SE (3rd generation)")
 
         NavigationView {
-            AnimalDetailsView(name: "Patch", navigationState: NavigationState())
+            AnimalDetailsView(name: "Patch")
+                .environmentObject(NavigationState())
         }
         .previewDevice("iPhone 12 Pro")
         .previewDisplayName("iPhone 12 Pro")

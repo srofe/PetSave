@@ -7,9 +7,23 @@
 
 import SwiftUI
 
+struct AnimalDetailsRouter: NavigationRouter {
+    typealias Data = AnimalEntity
+
+    func navigate<T: View>(data: AnimalEntity, navigationState: NavigationState, view: (() -> T)?) -> AnyView {
+        AnyView(NavigationLink(
+            destination: AnimalDetailsView(name: data.name ?? "")
+                .environmentObject(navigationState)
+        ) {
+            view?()
+        }
+        )
+    }
+}
+
 struct AnimalDetailsView: View {
-    @EnvironmentObject var navigationState: NavigationState
     var name: String
+    @EnvironmentObject var navigationState: NavigationState
 
     var body: some View {
         Text(name)
@@ -22,14 +36,7 @@ struct AnimalDetailsView: View {
 struct AnimalDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            AnimalDetailsView(name: "Kiki")
-                .environmentObject(NavigationState())
-        }
-        .previewLayout(.sizeThatFits)
-        .previewDisplayName("iPhone SE (3rd generation)")
-
-        NavigationView {
-            AnimalDetailsView(name: "Patch")
+            AnimalDetailsView(name: "Snow")
                 .environmentObject(NavigationState())
         }
         .previewDevice("iPhone 12 Pro")

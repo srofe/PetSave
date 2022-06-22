@@ -24,6 +24,7 @@
 		685F0455086B5191855DB48B /* Address+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0C53A4E8FF4402E18C27 /* Address+CoreData.swift */; };
 		685F046067A986C1282D48C3 /* PhotoSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0673683B0470B3BD7968 /* PhotoSizes.swift */; };
 		685F04618B4C7A2EC4F5DF3F /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0022CAE79D1014208340 /* APIToken.swift */; };
+		685F0563C1CE6DABD1F5DFD8 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F04DC20D3D2A6F479555D /* OnboardingModel.swift */; };
 		685F05AF00102C60CFE1511F /* VideoLink+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F007464F531A224DD24F7 /* VideoLink+CoreData.swift */; };
 		685F05B91FC6A5707F1C3559 /* AnimalsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F033BBDBDCAC0FFA586BA /* AnimalsRequestMock.swift */; };
 		685F05C38308779AB9FDC459 /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0ECEC6F7E116DE14ED97 /* AnimalRow.swift */; };
@@ -53,6 +54,7 @@
 		685F0EE6C35111CB352B9A83 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F058B80147B5A0F9F581A /* LocationManager.swift */; };
 		685F0EFBD960388A06EFF960 /* AnimalAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0E08CF5A5C521860D081 /* AnimalAttributes.swift */; };
 		685F0F0966E956D698E56EE3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F06AF02AD49D96384E335 /* Pagination.swift */; };
+		685F0F4768804EA5D4F10818 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0F63EF4C7056FB26E7BA /* Pet.swift */; };
 		685F0F52D7F9430029538527 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0CBA197E3C831C5F640B /* User.swift */; };
 		685F0FB99AA5278A56B72AEB /* VideoLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0D4F27CA8D6CD9A61518 /* VideoLink.swift */; };
 		F40447AB283DDC0A008BC67C /* PetSaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40447AA283DDC0A008BC67C /* PetSaveApp.swift */; };
@@ -109,6 +111,16 @@
 		F4C16F69285DAA4D002113B5 /* SearchFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C16F68285DAA4D002113B5 /* SearchFilterView.swift */; };
 		F4C2C3182840293200B3D339 /* AnimalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */; };
 		F4C2C31A28405FE400B3D339 /* AnimalLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */; };
+		F4DA61902861537500348340 /* PetSaveOnboarding.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DA618F2861537500348340 /* PetSaveOnboarding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4DA61932861537500348340 /* PetSaveOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4DA618D2861537500348340 /* PetSaveOnboarding.framework */; };
+		F4DA61942861537500348340 /* PetSaveOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4DA618D2861537500348340 /* PetSaveOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4DA619B2861545C00348340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DA619A2861545C00348340 /* Assets.xcassets */; };
+		F4DA619E2861551B00348340 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA619D2861551B00348340 /* Bundle+Extension.swift */; };
+		F4DA61A02861552800348340 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA619F2861552800348340 /* Color+Extension.swift */; };
+		F4DA61A22861553200348340 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A12861553200348340 /* Image+Extension.swift */; };
+		F4DA61A42861618500348340 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A32861618500348340 /* OnboardingView.swift */; };
+		F4DA61A628616C9800348340 /* OnboardingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */; };
+		F4DA61A828616E4400348340 /* PetSaveOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA61A728616E4400348340 /* PetSaveOnboardingView.swift */; };
 		F4DEA0C228461E77001A5C7E /* AccessTokenManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -127,7 +139,28 @@
 			remoteGlobalIDString = F40447A6283DDC0A008BC67C;
 			remoteInfo = PetSave;
 		};
+		F4DA61912861537500348340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F404479F283DDC0A008BC67C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4DA618C2861537500348340;
+			remoteInfo = PetSaveOnboarding;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4DA61952861537500348340 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4DA61942861537500348340 /* PetSaveOnboarding.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		685F0022CAE79D1014208340 /* APIToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
@@ -143,6 +176,7 @@
 		685F03E6A14C8B2558A323F8 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		685F043537C5FC1CDFB6E471 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		685F045713A1B73C1DCEB130 /* AnimalsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalsMock.json; sourceTree = "<group>"; };
+		685F04DC20D3D2A6F479555D /* OnboardingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		685F0541A3D8ED1B8D5D68A4 /* AnimalsFetcherMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsFetcherMock.swift; sourceTree = "<group>"; };
 		685F05587A5437F1153EB241 /* AnimalAttributes+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalAttributes+CoreData.swift"; sourceTree = "<group>"; };
 		685F058782C4A1D3B63FF5EE /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
@@ -177,6 +211,7 @@
 		685F0ECE70597438EE713341 /* FetchAnimalsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAnimalsService.swift; sourceTree = "<group>"; };
 		685F0ECEC6F7E116DE14ED97 /* AnimalRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		685F0EF657EB938997BC147C /* Contact+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreData.swift"; sourceTree = "<group>"; };
+		685F0F63EF4C7056FB26E7BA /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		685F0F827C44AFC723884C66 /* AnimalEnvironment+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEnvironment+CoreData.swift"; sourceTree = "<group>"; };
 		685F0FA841D436CD5385CF00 /* AnimalEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalEnvironment.swift; sourceTree = "<group>"; };
 		F40447A7283DDC0A008BC67C /* PetSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +270,15 @@
 		F4C16F68285DAA4D002113B5 /* SearchFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterView.swift; sourceTree = "<group>"; };
 		F4C2C3172840293200B3D339 /* AnimalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalHeaderView.swift; sourceTree = "<group>"; };
 		F4C2C31928405FE400B3D339 /* AnimalLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLocationView.swift; sourceTree = "<group>"; };
+		F4DA618D2861537500348340 /* PetSaveOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PetSaveOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4DA618F2861537500348340 /* PetSaveOnboarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PetSaveOnboarding.h; sourceTree = "<group>"; };
+		F4DA619A2861545C00348340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4DA619D2861551B00348340 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F4DA619F2861552800348340 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F4DA61A12861553200348340 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		F4DA61A32861618500348340 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBackgroundView.swift; sourceTree = "<group>"; };
+		F4DA61A728616E4400348340 /* PetSaveOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveOnboardingView.swift; sourceTree = "<group>"; };
 		F4DEA0C128461E77001A5C7E /* AccessTokenManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +287,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DA61932861537500348340 /* PetSaveOnboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +299,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F40447BE283DDC0B008BC67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DA618A2861537500348340 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,12 +543,22 @@
 			path = api;
 			sourceTree = "<group>";
 		};
+		685F0E19697D65EF784FD82C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				685F04DC20D3D2A6F479555D /* OnboardingModel.swift */,
+				685F0F63EF4C7056FB26E7BA /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F404479E283DDC0A008BC67C = {
 			isa = PBXGroup;
 			children = (
 				F40447A9283DDC0A008BC67C /* PetSave */,
 				F40447BA283DDC0B008BC67C /* PetSaveTests */,
 				F40447C4283DDC0B008BC67C /* PetSaveUITests */,
+				F4DA618E2861537500348340 /* PetSaveOnboarding */,
 				F40447A8283DDC0A008BC67C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -507,6 +569,7 @@
 				F40447A7283DDC0A008BC67C /* PetSave.app */,
 				F40447B7283DDC0B008BC67C /* PetSaveTests.xctest */,
 				F40447C1283DDC0B008BC67C /* PetSaveUITests.xctest */,
+				F4DA618D2861537500348340 /* PetSaveOnboarding.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -743,7 +806,50 @@
 			path = services;
 			sourceTree = "<group>";
 		};
+		F4DA618E2861537500348340 /* PetSaveOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA619C286154F500348340 /* Extensions */,
+				685F0E19697D65EF784FD82C /* Model */,
+				F4DA61992861542400348340 /* Resources */,
+				F4DA618F2861537500348340 /* PetSaveOnboarding.h */,
+				F4DA61A32861618500348340 /* OnboardingView.swift */,
+				F4DA61A528616C9800348340 /* OnboardingBackgroundView.swift */,
+				F4DA61A728616E4400348340 /* PetSaveOnboardingView.swift */,
+			);
+			path = PetSaveOnboarding;
+			sourceTree = "<group>";
+		};
+		F4DA61992861542400348340 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA619A2861545C00348340 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4DA619C286154F500348340 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA619D2861551B00348340 /* Bundle+Extension.swift */,
+				F4DA619F2861552800348340 /* Color+Extension.swift */,
+				F4DA61A12861553200348340 /* Image+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4DA61882861537500348340 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DA61902861537500348340 /* PetSaveOnboarding.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F40447A6283DDC0A008BC67C /* PetSave */ = {
@@ -753,10 +859,12 @@
 				F40447A3283DDC0A008BC67C /* Sources */,
 				F40447A4283DDC0A008BC67C /* Frameworks */,
 				F40447A5283DDC0A008BC67C /* Resources */,
+				F4DA61952861537500348340 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4DA61922861537500348340 /* PBXTargetDependency */,
 			);
 			name = PetSave;
 			productName = PetSave;
@@ -799,6 +907,24 @@
 			productReference = F40447C1283DDC0B008BC67C /* PetSaveUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F4DA618C2861537500348340 /* PetSaveOnboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4DA61982861537500348340 /* Build configuration list for PBXNativeTarget "PetSaveOnboarding" */;
+			buildPhases = (
+				F4DA61882861537500348340 /* Headers */,
+				F4DA61892861537500348340 /* Sources */,
+				F4DA618A2861537500348340 /* Frameworks */,
+				F4DA618B2861537500348340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetSaveOnboarding;
+			productName = PetSaveOnboarding;
+			productReference = F4DA618D2861537500348340 /* PetSaveOnboarding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -820,6 +946,10 @@
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = F40447A6283DDC0A008BC67C;
 					};
+					F4DA618C2861537500348340 = {
+						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
+					};
 				};
 			};
 			buildConfigurationList = F40447A2283DDC0A008BC67C /* Build configuration list for PBXProject "PetSave" */;
@@ -838,6 +968,7 @@
 				F40447A6283DDC0A008BC67C /* PetSave */,
 				F40447B6283DDC0B008BC67C /* PetSaveTests */,
 				F40447C0283DDC0B008BC67C /* PetSaveUITests */,
+				F4DA618C2861537500348340 /* PetSaveOnboarding */,
 			);
 		};
 /* End PBXProject section */
@@ -864,6 +995,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DA618B2861537500348340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DA619B2861545C00348340 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,6 +1130,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4DA61892861537500348340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DA619E2861551B00348340 /* Bundle+Extension.swift in Sources */,
+				F4DA61A02861552800348340 /* Color+Extension.swift in Sources */,
+				F4DA61A628616C9800348340 /* OnboardingBackgroundView.swift in Sources */,
+				F4DA61A22861553200348340 /* Image+Extension.swift in Sources */,
+				F4DA61A828616E4400348340 /* PetSaveOnboardingView.swift in Sources */,
+				685F0563C1CE6DABD1F5DFD8 /* OnboardingModel.swift in Sources */,
+				F4DA61A42861618500348340 /* OnboardingView.swift in Sources */,
+				685F0F4768804EA5D4F10818 /* Pet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1003,6 +1157,11 @@
 			isa = PBXTargetDependency;
 			target = F40447A6283DDC0A008BC67C /* PetSave */;
 			targetProxy = F40447C2283DDC0B008BC67C /* PBXContainerItemProxy */;
+		};
+		F4DA61922861537500348340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4DA618C2861537500348340 /* PetSaveOnboarding */;
+			targetProxy = F4DA61912861537500348340 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1124,6 +1283,7 @@
 		F40447CC283DDC0B008BC67C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1153,6 +1313,7 @@
 		F40447CD283DDC0B008BC67C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1255,6 +1416,71 @@
 			};
 			name = Release;
 		};
+		F4DA61962861537500348340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4SKJAJR837;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poddlybonk.PetSaveOnboarding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4DA61972861537500348340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4SKJAJR837;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poddlybonk.PetSaveOnboarding;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1290,6 +1516,15 @@
 			buildConfigurations = (
 				F40447D2283DDC0B008BC67C /* Debug */,
 				F40447D3283DDC0B008BC67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4DA61982861537500348340 /* Build configuration list for PBXNativeTarget "PetSaveOnboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4DA61962861537500348340 /* Debug */,
+				F4DA61972861537500348340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

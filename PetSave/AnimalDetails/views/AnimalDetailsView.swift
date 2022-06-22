@@ -9,12 +9,12 @@ import SwiftUI
 
 struct AnimalDetailsView: View {
     var name: String
-    @Binding var isNavigatingDisabled: Bool
+    @ObservedObject var navigationState: NavigationState
 
     var body: some View {
         Text(name)
-        Button(isNavigatingDisabled ? "Enable Navigation" : "Disable Navigation") {
-            isNavigatingDisabled.toggle()
+        Button(navigationState.isNavigatingDisabled ? "Enable Navigation" : "Disable Navigation") {
+            navigationState.isNavigatingDisabled.toggle()
         }
     }
 }
@@ -22,13 +22,13 @@ struct AnimalDetailsView: View {
 struct AnimalDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            AnimalDetailsView(name: "Kiki", isNavigatingDisabled: .constant(false))
+            AnimalDetailsView(name: "Kiki", navigationState: NavigationState())
         }
         .previewLayout(.sizeThatFits)
         .previewDisplayName("iPhone SE (3rd generation)")
 
         NavigationView {
-            AnimalDetailsView(name: "Patch", isNavigatingDisabled: .constant(false))
+            AnimalDetailsView(name: "Patch", navigationState: NavigationState())
         }
         .previewDevice("iPhone 12 Pro")
         .previewDisplayName("iPhone 12 Pro")

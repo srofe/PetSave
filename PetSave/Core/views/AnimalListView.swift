@@ -19,21 +19,21 @@ struct AnimalListView<Content, Data>: View where Content: View, Data: RandomAcce
         }
     }
 
-    @State var isNavigationDisabled = false
+    @StateObject var navigationState = NavigationState()
     var body: some View {
         List {
-            Button(isNavigationDisabled ? "Enable Navigation" : "Disable Navigation") {
-                isNavigationDisabled.toggle()
+            Button(navigationState.isNavigatingDisabled ? "Enable Navigation" : "Disable Navigation") {
+                navigationState.isNavigatingDisabled.toggle()
             }
             ForEach(animals) { animal in
                 NavigationLink(
                     destination: AnimalDetailsView(
                         name: animal.name ?? "",
-                        isNavigatingDisabled: $isNavigationDisabled)
+                        navigationState: navigationState)
                 ) {
                     AnimalRow(animal: animal)
                 }
-                .disabled(isNavigationDisabled)
+                .disabled(navigationState.isNavigatingDisabled)
             }
             footer
         }

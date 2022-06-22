@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-class NavigationState: ObservableObject {
-    @Published var isNavigatingDisabled = false
-}
-
 struct AnimalsNearYouView: View {
+    @ObservedObject var viewModel: AnimalsNearYouViewModel
     @FetchRequest(
         sortDescriptors: [
             NSSortDescriptor(keyPath: \AnimalEntity.timestamp, ascending: true)
@@ -19,7 +16,6 @@ struct AnimalsNearYouView: View {
         animation: .default
     )
     private var animals: FetchedResults<AnimalEntity>
-    @ObservedObject var viewModel: AnimalsNearYouViewModel
 
     var body: some View {
         NavigationView {
@@ -50,14 +46,28 @@ struct AnimalsNearYouView: View {
 
 struct AnimalsNearYouView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalsNearYouView(
-            viewModel: AnimalsNearYouViewModel(
-                animalFetcher: AnimalsFetcherMock(),
-                animalStore: AnimalStoreService(
-                    context: PersistenceController.preview.container.viewContext
+        Group {
+            AnimalsNearYouView(
+                viewModel: AnimalsNearYouViewModel(
+                    animalFetcher: AnimalsFetcherMock(),
+                    animalStore: AnimalStoreService(
+                        context: PersistenceController.preview.container.viewContext
+                    )
                 )
             )
+            AnimalsNearYouView(
+                viewModel: AnimalsNearYouViewModel(
+                    animalFetcher: AnimalsFetcherMock(),
+                    animalStore: AnimalStoreService(
+                        context: PersistenceController.preview.container.viewContext
+                    )
+                )
+            )
+            .preferredColorScheme(.dark)
+        }
+        .environment(
+            \.managedObjectContext,
+             PersistenceController.preview.container.viewContext
         )
-        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

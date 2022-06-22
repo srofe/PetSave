@@ -34,7 +34,7 @@ struct PetSaveApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .sheet(isPresented: $shouldPresentOnboarding, onDismiss: nil) {
+                .fullScreenCover(isPresented: $shouldPresentOnboarding, onDismiss: nil) {
                     PetSaveOnboardingView(items: onboardingModels)
                         .onSkip {
                             shouldPresentOnboarding = false

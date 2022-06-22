@@ -252,7 +252,6 @@
 		F462BA2C2862D79F003A41DA /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		F462BA2E2862DFFA003A41DA /* PetSaveTabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveTabType.swift; sourceTree = "<group>"; };
 		F462BA302862E02C003A41DA /* PetSaveTabNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSaveTabNavigator.swift; sourceTree = "<group>"; };
-		F462BA322862E1BF003A41DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F462F085284C8E3700A5FCC9 /* BreedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedEntity.swift; sourceTree = "<group>"; };
 		F4835BB5285FDE5F00382221 /* SearchViewModelTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTestCase.swift; sourceTree = "<group>"; };
 		F4B863FB28446BB80086628E /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
@@ -587,7 +586,6 @@
 		F40447A9283DDC0A008BC67C /* PetSave */ = {
 			isa = PBXGroup;
 			children = (
-				F462BA322862E1BF003A41DA /* Info.plist */,
 				F41AB6302840AF0A002959E0 /* Search */,
 				F40A3DCE283F324200ED1D89 /* AnimalDetails */,
 				F41AB62C2840AE26002959E0 /* AnimalsNearYou */,

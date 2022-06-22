@@ -17,10 +17,11 @@ struct ContentView: View {
                     animalFetcher: FetchAnimalsService(requestManager: RequestManager()),
                     animalStore: AnimalStoreService(context: PersistenceController.shared.container.newBackgroundContext())
                 ))
-                .tabItem {
-                    Label("Near you", systemImage: "location")
-                }
-                .environment(\.managedObjectContext, managedObjectContext)
+            .badge(2)
+            .tabItem {
+                Label("Near you", systemImage: "location")
+            }
+            .environment(\.managedObjectContext, managedObjectContext)
             SearchView()
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")

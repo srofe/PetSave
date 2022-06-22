@@ -22,9 +22,10 @@ struct AnimalListView<Content, Data>: View where Content: View, Data: RandomAcce
     var body: some View {
         List {
             ForEach(animals) { animal in
-                NavigationLink(destination: AnimalDetailsView()) {
-                    AnimalRow(animal: animal)
-                }
+                NavigationLink(
+                    animal.name ?? "",
+                    destination: AnimalDetailsView()
+                )
             }
             footer
         }

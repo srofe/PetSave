@@ -40,7 +40,7 @@ struct SearchFilterView: View {
                 dismiss()
             }
         }
-        .navigationTitle("Filters")
+        .navigationBarTitle("Filters")
         .toolbar {
             ToolbarItem {
                 Button {

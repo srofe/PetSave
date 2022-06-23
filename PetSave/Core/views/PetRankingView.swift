@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PetRankingView: View {
-    @ObservableObject var viewModel: PetRankingViewModel
+    @ObservedObject var viewModel: PetRankingViewModel
     var animal: AnimalEntity
 
     init(animal: AnimalEntity) {
@@ -27,7 +27,7 @@ struct PetRankingView: View {
     }
 }
 
-struct PetRanking: View {
+struct PetRankImage: View {
     let index: Int
     @State var opacity: Double = 0.4
     @State var tapped = false
@@ -58,8 +58,27 @@ struct PetRanking: View {
     }
 }
 
+final class PetRankingViewModel: ObservableObject {
+    var animal: AnimalEntity
+    var ranking: Int {
+        didSet {
+            animal.ranking = Int32(ranking)
+            objectWillChange.send()
+        }
+    }
+
+    init(animal: AnimalEntity) {
+        self.animal = animal
+        self.ranking = Int(animal.ranking)
+    }
+}
+
 struct PetRankingView_Previews: PreviewProvider {
     static var previews: some View {
-        PetRankingView()
+        if let animal = CoreDataHelper.getTestAnimalEntity() {
+            PetRankingView(animal: animal)
+                .padding()
+                .previewLayout(.sizeThatFits)
+        }
     }
 }

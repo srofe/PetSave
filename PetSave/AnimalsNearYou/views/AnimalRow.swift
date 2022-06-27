@@ -31,6 +31,7 @@ struct AnimalRow: View {
                     .overlay {
                         if animal.picture != nil {
                             ProgressView()
+                                .accessibilityHidden(true)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                                 .background(.gray.opacity(0.4))
                         }
@@ -47,16 +48,19 @@ struct AnimalRow: View {
                 Text(animalBreedAndType)
                     .font(.callout)
                     .accessibilityLabel(animalBreedAndType)
+                    .accessibilityHidden(true)
                 if let description = animal.desc {
                     Text(description)
                         .lineLimit(2)
                         .font(.footnote)
                         .accessibilityLabel(description)
+                        .accessibilityHidden(true)
                 }
                 HStack {
                     Text(animal.age.rawValue)
                         .modifier(AnimalAttributesCard(color: animal.age.color))
                         .accessibilityLabel(animal.age.rawValue)
+                        .accessibilityHidden(true)
                     Text(animal.gender.rawValue)
                         .modifier(AnimalAttributesCard(color: .pink))
                         .accessibilityLabel(animal.gender.rawValue)
@@ -64,6 +68,10 @@ struct AnimalRow: View {
             }
             .lineLimit(1)
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityCustomContent("Age", animal.age.rawValue, importance: .high)
+        .accessibilityCustomContent("Breed", animal.breed)
+        .accessibilityCustomContent("Type", animalType)
     }
 }
 

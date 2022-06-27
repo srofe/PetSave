@@ -16,9 +16,11 @@ struct AnimalLocationView: View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Location")
                 .font(.headline)
+                .accessibility(label: Text("Location Header"))
             Text(animal.address)
                 .font(.subheadline)
                 .textSelection(.enabled)
+                .accessibility(label: Text("The pet's address: " + animal.address))
             Button(action: openAddressInMaps) {
                 Map(coordinateRegion: $addressFetcher.coordinates, interactionModes: [])
             }
